@@ -28,7 +28,6 @@ export default function Routes() {
                 elevation: 0,
                 borderRadius: 7,
                 height: 30,
-
             }
         }}
     >
