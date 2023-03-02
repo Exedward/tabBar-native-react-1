@@ -1,46 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native';
 
+import { View, Text } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native';
+import React from 'react'
+
+import Routes from './src/routes';
+
 export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
-        <View style={styles.content}>
-          <Text style={styles.texto}>Edu 1.</Text>
-        </View>
-        <View style={styles.content}>
-          <Text style={styles.texto}>Edu 2.</Text>
-        </View>
-        <View style={styles.content}>
-          <Text style={styles.texto}>Edu 3.</Text>
-        </View>
-        <View style={styles.content}>
-          <Text style={styles.texto}>Edu 4.</Text>
-        </View>
-        <View style={styles.content}>
-          <Text style={styles.texto}>Edu 5.</Text>
-        </View>
-        <View style={styles.content}>
-          <Text style={styles.texto}>Edu 6.</Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
+    <View style={styles.container}>
+      <NavigationContainer>
+        <Routes/>
+      </NavigationContainer>
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container:{
     flex: 1,
-    backgroundColor: '#666',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  content: {
-    width: '90%',
-    height:'40%',
-    backgroundColor: '#222',
-  },
-  texto:{
-    fontSize: 20,
   }
-});
+})
