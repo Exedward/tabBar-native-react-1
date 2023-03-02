@@ -3,7 +3,7 @@ import React from 'react'
 
 const Favorites = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Favorites</Text>
     </View>
   )

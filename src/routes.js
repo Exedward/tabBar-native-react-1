@@ -78,5 +78,3 @@ export default function Routes() {
     </Tab.Navigator>
   )
 }
-
-const styles = StyleSheet.create({})
