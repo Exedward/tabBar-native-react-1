@@ -1,19 +1,46 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, ScrollView } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
+        <View style={styles.content}>
+          <Text style={styles.texto}>Edu 1.</Text>
+        </View>
+        <View style={styles.content}>
+          <Text style={styles.texto}>Edu 2.</Text>
+        </View>
+        <View style={styles.content}>
+          <Text style={styles.texto}>Edu 3.</Text>
+        </View>
+        <View style={styles.content}>
+          <Text style={styles.texto}>Edu 4.</Text>
+        </View>
+        <View style={styles.content}>
+          <Text style={styles.texto}>Edu 5.</Text>
+        </View>
+        <View style={styles.content}>
+          <Text style={styles.texto}>Edu 6.</Text>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#666',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  content: {
+    width: '90%',
+    height:'40%',
+    backgroundColor: '#222',
+  },
+  texto:{
+    fontSize: 20,
+  }
 });
