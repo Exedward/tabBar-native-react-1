@@ -1,8 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-
-
 export default function Home() {
     return (
       <SafeAreaView style={styles.container}>
@@ -25,6 +23,9 @@ export default function Home() {
           <View style={styles.content}>
             <Text style={styles.texto}>Edu 6.</Text>
           </View>
+          <View style={styles.content}>
+            <Text style={styles.texto}>Edu 7.</Text>
+          </View>
         </ScrollView>
       </SafeAreaView>
     );
@@ -39,7 +40,7 @@ export default function Home() {
     },
     content: {
       width: '90%',
-      height:'40%',
+      height:'25%',
       backgroundColor: '#222',
     },
     texto:{
