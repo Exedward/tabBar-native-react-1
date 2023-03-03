@@ -21,7 +21,7 @@ export default function Routes() {
                 position: 'absolute',
                 backgroundColor: '#999',
                 borderTopWidth: 0,
-
+                
                 bottom: 10,
                 lef: 5,
                 right: 5,
